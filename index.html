@@ -1,0 +1,30 @@
+<!-- Put your HTML HERE, make sure to connect your style.css sheet -->
+<!doctype html>
+
+<html ng-app="userProfiles">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-controller="mainController">
+
+  
+  <div ng-repeat= "user in users">
+    {{user.id}}
+    {{user.first_name}}
+    {{user.last_name}}
+    <img src = {{user.avatar}} >
+  </div>
+  
+  
+  
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="controller.js"></script>
+  <script type="text/javascript" src="service.js"></script>
+</body>
+</html>
